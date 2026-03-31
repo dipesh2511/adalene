@@ -195,7 +195,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: url("../image/headerimage.jpg") center/cover no-repeat;
+  background: url("../image/headerimage.webp") center/cover no-repeat;
   background-attachment: fixed;
   top: 0;
   z-index: 0;
@@ -411,11 +411,11 @@ body {
 .mid-first-image-container { width: 50%; height: 50%; position: relative; }
 .mid-first-image-container img { height: 100%; width: 100%; position: absolute; object-fit: cover; }
 #mid-one-second-img {
-  background: url('../image/midone/pinkpurse.jpg') center/cover no-repeat fixed;
+  background: url('../image/midone/pinkpurse.webp') center/cover no-repeat fixed;
   height: 100%; width: 100%;
 }
 #mid-one-third-img {
-  background: url('../image/midone/belt.jpg') center/cover no-repeat fixed;
+  background: url('../image/midone/belt.webp') center/cover no-repeat fixed;
   height: 100%; width: 100%;
 }
 .mid-first-image-container h1 {
