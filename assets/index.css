@@ -183,7 +183,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: url('/image/headerimage.jpg') center/cover no-repeat;
+  background: url('./image/headerimage.jpg') center/cover no-repeat;
   background-attachment: fixed;
   top: 0;
   z-index: 0;
