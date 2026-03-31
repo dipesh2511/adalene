@@ -13,11 +13,11 @@
     const cart = {};
 
     // ── DOM References ───────────────────────────────────────────────────────
-    const mainDisplay      = document.getElementById('main-display');
-    const cartSection      = document.getElementById('addcart-center-section');
-    const totalDisplay     = document.getElementById('center-cart-display');
-    const emptyMsg         = document.getElementById('empty-cart-msg');
-    const cartShopLink     = document.getElementById('cart-shop-link');
+    const mainDisplay = document.getElementById('main-display');
+    const cartSection = document.getElementById('addcart-center-section');
+    const totalDisplay = document.getElementById('center-cart-display');
+    const emptyMsg = document.getElementById('empty-cart-msg');
+    const cartShopLink = document.getElementById('cart-shop-link');
 
     // ── Helpers ──────────────────────────────────────────────────────────────
 
@@ -63,7 +63,7 @@
         const row = document.createElement('div');
         row.className = 'cart-list';
         row.id = 'cart-item-' + id;
-
+        console.log(item.img)
         row.innerHTML = `
             <div class="cart-product-img-container">
                 <img src="${item.img}" alt="${item.name}">
@@ -97,11 +97,11 @@
         const card = e.target.closest('.product-card');
         if (!card) return;
 
-        const id    = card.getAttribute('data-value');
-        const name  = card.getAttribute('data-name')  || 'Product';
+        const id = card.getAttribute('data-value');
+        const name = card.getAttribute('data-name') || 'Product';
         const price = parseFloat(card.getAttribute('data-price')) || 0;
-        const img   = card.getAttribute('data-img')   || '';
-
+        const img = card.getAttribute('data-img') || '';
+        console.log(img,"this is what i am fetting")
         if (cart[id]) {
             cart[id].qty += 1;
         } else {
